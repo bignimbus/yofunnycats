@@ -10,18 +10,19 @@ var yoFunnyCats = {
         yoFunnyCats.addEventListeners();
 
         yoFunnyCats.render();
-        
+
     },
 
     addEventListeners: function () {
         'use strict';
         
-        $('#gif-container').on('click', yoFunnyCats.displayNewCat);
+        $( '#gif-container' ).on( 'click', yoFunnyCats.displayNewCat );
 
     },
 
     getNewCats: function () {
         'use strict';
+        
         $.ajax({
             async: false,
             type: "GET",
